@@ -1,0 +1,20 @@
+{
+    "name": "nl.btr.telegram",
+    "description": "Description",
+    "architecture": "arm64",
+    "title": "Telegram",
+    "hooks": {
+        "telegram": {
+            "apparmor": "telegram.apparmor",
+            "desktop":  "telegram.desktop",
+            "urls": "telegram.url-dispatcher.json"
+        },
+        "telegramHelper": {
+            "apparmor": "pushHelper.apparmor.json",
+            "push-helper": "pushHelper.json"
+        }
+    },
+    "version": "0.2.4",
+    "maintainer": "Rending the Bules <email@domain.org>",
+    "framework" : "ubuntu-sdk-20.04"
+}

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Telegram
+Exec=telegram %U
+Icon=assets/logo.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

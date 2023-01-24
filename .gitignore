@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+
+# generated files
+deploy/
+build/
+moc_*
+moc\.*
+rcc_*
+rcc\.*

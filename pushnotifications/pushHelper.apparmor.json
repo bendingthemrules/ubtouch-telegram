@@ -1,0 +1,5 @@
+{
+  "template": "ubuntu-push-helper",
+  "policy_groups": ["push-notification-client"],
+  "policy_version": 20.04
+}
