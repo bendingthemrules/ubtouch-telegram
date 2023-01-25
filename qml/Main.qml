@@ -27,6 +27,20 @@ MainView {
     objectName: 'mainView'
     applicationName: 'nl.btr.telegram'
 
+    PushClient {
+        id: pushClient
+        appId: "nl.btr.telegram_telegram"
+
+        Component.onCompleted: {
+            notificationsChanged.connect((msgs) => {
+                console.log('GOT NOTIFICATION', msgs);
+            });
+            error.connect((err) => {
+                console.log('GOT ERROR', err);
+            });
+        }
+    }
+
     PageStack {
         id: pageStack
         Component.onCompleted: push(Qt.resolvedUrl("Webview.qml"))
